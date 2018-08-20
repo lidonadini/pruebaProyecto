@@ -3,8 +3,7 @@
     public class Cat
     {
         public string Name { get; set; }
-
-        private Cat() { }
+        public int Age {get;set;}
     }
         
 }
