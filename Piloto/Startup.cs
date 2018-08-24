@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Piloto.ContextoBaseDatos;
 
 namespace Piloto
 {
@@ -21,7 +23,8 @@ namespace Piloto
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            var connection = @"Data Source=localhost\SQLExpress;Initial Catalog=Prueba_PIS_Base;Integrated Security=True;";
+            services.AddDbContext<PIS_Contexto>(options => options.UseSqlServer(connection));
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
