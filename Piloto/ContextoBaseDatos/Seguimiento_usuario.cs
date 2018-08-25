@@ -7,14 +7,21 @@ using System.Threading.Tasks;
 
 namespace Piloto.ContextoBaseDatos
 {
-    public class RelacionRol_Permiso
+    public class Seguimiento_usuario
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        public virtual Rol Rol { get; set; }
+        public virtual Usuario Usuario { get; set; }
 
-        public virtual Permiso Permiso { get; set; }
+        public Accion actividad { get; set; }
+
+    }
+
+    public enum Accion
+    {
+        Pedir_Reporte = 1,
+        Ver_Mapa = 2
     }
 }

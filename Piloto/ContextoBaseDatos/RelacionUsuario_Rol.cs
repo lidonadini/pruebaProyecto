@@ -13,8 +13,8 @@ namespace Piloto.ContextoBaseDatos
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        public int usuario_id { get; set; }
+        public Usuario Usuario { get; set; }
 
-        public int rol_id { get; set; }
+        public Rol Rol { get; set; }
     }
 }

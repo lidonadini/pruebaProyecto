@@ -20,5 +20,6 @@ namespace Piloto.ContextoBaseDatos
         public DbSet<Permiso> Permiso { get; set; }
         public DbSet<RelacionUsuario_Rol> RelacionUsuario_Rol { get; set; }
         public DbSet<RelacionRol_Permiso> RelacionRol_Permiso { get; set; }
+        public DbSet<Seguimiento_usuario> Seguimiento_usuario { get; set; }
     }
 }
