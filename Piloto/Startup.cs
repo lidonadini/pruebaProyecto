@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Piloto.Persistencia;
 
 namespace Piloto
 {
@@ -21,7 +23,8 @@ namespace Piloto
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            var connection = @"Data Source=DESKTOP-I3721K3\SQLEXPRESS;Initial Catalog=Prueba_PIS_1;Integrated Security=True;";
+            services.AddDbContext<Contexto>(options => options.UseSqlServer(connection));
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
