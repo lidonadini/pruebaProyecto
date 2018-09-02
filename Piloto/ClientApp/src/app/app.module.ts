@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PruebaComponent } from './prueba/prueba.component';
+import { PruebaService } from './services/prueba/prueba.service';
 
 @NgModule({ // en el NgModule se deben crear todos los componentes de la applicacion
   declarations: [
@@ -32,7 +33,7 @@ import { PruebaComponent } from './prueba/prueba.component';
       // el componente FetchDataComponet
     ])
   ],
-  providers: [], // aca se colocan los servicios que podemos inyectar en las clases o componentes
+  providers: [PruebaService], // aca se colocan los servicios que podemos inyectar en las clases o componentes
                  // un servicio no es mas que una clase que podemos reutilizar en varias partes de la app
   bootstrap: [AppComponent] // Esto quiere decir que el componente AppComponent debe ser el primero en ser cargado
                             // en la pagina
