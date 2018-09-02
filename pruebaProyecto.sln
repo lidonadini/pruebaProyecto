@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piloto", "Piloto\Piloto.csproj", "{96A2C918-98ED-47AC-BF2A-25093EA578FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Piloto", "Piloto\Piloto.csproj", "{96A2C918-98ED-47AC-BF2A-25093EA578FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "..\PIS\WebApplication1\WebApplication1.csproj", "{36EF7277-6FD3-4F17-A273-0BC4CC373F31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{96A2C918-98ED-47AC-BF2A-25093EA578FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A2C918-98ED-47AC-BF2A-25093EA578FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A2C918-98ED-47AC-BF2A-25093EA578FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EF7277-6FD3-4F17-A273-0BC4CC373F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EF7277-6FD3-4F17-A273-0BC4CC373F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EF7277-6FD3-4F17-A273-0BC4CC373F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EF7277-6FD3-4F17-A273-0BC4CC373F31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
